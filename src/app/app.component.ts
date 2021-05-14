@@ -9,10 +9,14 @@ import { AppService } from './app.service'
 export class AppComponent {
   title = 'envapp';
   appData: any;
+  apiGWData: any;
 
   constructor(private appService: AppService) {
       this.appService.getConfig().subscribe(data => {
           this.appData = data;
-      })
+      });
+      this.appService.getApiGWData().subscribe(data => {
+          this.apiGWData = data;
+      });
   }
 }
