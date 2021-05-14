@@ -4,6 +4,10 @@
     Welcome to {{ title }}!
   </h1>
 </div>
+    <!-- Resources -->
+  <h2>Resources From API GW</h2>
+  <pre>{{ cribs | async | json }}</pre>
+
 <div class="tblclas">
   <h2>Environment Configuration </h2>
   <table *ngIf="appData" class="table table-striped">
