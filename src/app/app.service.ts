@@ -9,7 +9,7 @@ export class AppService {
   constructor(private http: HttpClient) { }
 
   configUrl = 'envapp/assets/app.config.json';
-  apiGWUrl = 'https://ki7ulj4aa3.execute-api.us-east-1.amazonaws.com/dev/pets';
+  apiGWUrl = 'https://2biz8ozb25.execute-api.ap-northeast-1.amazonaws.com/dev/pets';
 
   getConfig() {
     return this.http.get(this.configUrl);
